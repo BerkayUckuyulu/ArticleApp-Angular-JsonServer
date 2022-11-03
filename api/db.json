@@ -1,0 +1,27 @@
+{
+  "articles": [
+    {
+      "author": "Berkay",
+      "title": "Deneme1",
+      "content": "Deneme yazısı2",
+      "comments": [],
+      "id": 1
+    },
+    {
+      "author": "Teslime",
+      "title": "Deneme2",
+      "content": "Deneme yazısı2",
+      "comments": [
+        {
+          "username": "berkay",
+          "comment": "1231421"
+        },
+        {
+          "username": "berkay",
+          "comment": "314t2314213"
+        }
+      ],
+      "id": 2
+    }
+  ]
+}

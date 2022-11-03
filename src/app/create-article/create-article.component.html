@@ -1,0 +1,28 @@
+<div class="container" color="basic">
+  <div class="content-wrapper">
+    <mat-form-field>
+      <mat-label color="primary">Kullanıcı Adı</mat-label>
+      <input
+        [(ngModel)]="username"
+        style="color: #fff"
+        placeholder="Adınız"
+        matInput
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label color="primary">Başlık</mat-label>
+      <input
+        [(ngModel)]="title"
+        style="color: #fff"
+        placeholder="Başlık"
+        matInput
+      />
+    </mat-form-field>
+    <angular-editor
+      [(ngModel)]="content"
+      style="background-color: #fff"
+      [config]="editorConfig"
+    ></angular-editor>
+    <button (click)="post()" mat-raised-button color="primary">Kaydet</button>
+  </div>
+</div>

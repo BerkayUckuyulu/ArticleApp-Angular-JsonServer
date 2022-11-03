@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="content-wrapper">
+        <div class="title">
+            {{articlesData[articleIndex].title}}
+        </div>
+        <div class="content">
+            {{articlesData[articleIndex].content}}
+
+        </div>
+        <div class="author">
+            Yazar: {{articlesData[articleIndex].author}}
+        </div>
+
+        <div class="comments">
+            <span class="comment" *ngFor="let comment of articlesData[articleIndex].comments">
+                <span class="uname">{{comment.username}}:</span>
+                <span class="comment">{{comment.comment}}</span>
+            </span>
+        </div>
+        <mat-form-field>
+            <mat-label>
+                Kullanıcı Adınız
+            </mat-label>
+            <input [(ngModel)]="username" matInput>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>
+                Yorumunuz
+            </mat-label>
+            <input [(ngModel)]="comment" matInput>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="addComment()">Yorumu Gönder</button>
+
+    </div>
+</div>
